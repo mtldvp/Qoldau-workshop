@@ -1,6 +1,6 @@
 # Qoldau workshop
 
-[![CI](https://github.com/xlmtvv/Qoldau-workshop/actions/workflows/ci.yml/badge.svg)](https://github.com/xlmtvv/Qoldau-workshop/actions/workflows/ci.yml)
+[![CI](https://github.com/mtldvp/Qoldau-workshop/actions/workflows/ci.yml/badge.svg)](https://github.com/mtldvp/Qoldau-workshop/actions/workflows/ci.yml)
 
 A small runnable project for the “Improve your pipeline” team workshop.
 
