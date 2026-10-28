@@ -1,0 +1,27 @@
+{
+  "name": "qoldau-workshop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A runnable project for a GitHub Actions team workshop",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node dist/src/server.js",
+    "lint": "eslint . --max-warnings 0 && prettier . --check",
+    "format": "prettier . --write",
+    "test": "node --test",
+    "build": "node scripts/build.js",
+    "smoke": "node scripts/smoke.js",
+    "check:readme": "grep \"project\" README.md",
+    "check": "npm run lint && npm test && npm run build && npm run check:readme && npm run smoke"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}

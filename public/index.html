@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Учебный проект Qoldau: линтер, сборка, тесты и GitHub Actions."
+    />
+    <title>Qoldau · CI workshop</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="brand" href="/" aria-label="Qoldau — главная"
+          ><span class="mark" aria-hidden="true">Q</span>Qoldau<span class="tag"
+            >WORKSHOP</span
+          ></a
+        >
+        <a class="repo" href="https://github.com/xlmtvv/Qoldau-workshop/actions"
+          >GitHub Actions ↗</a
+        >
+      </header>
+      <section class="intro" aria-labelledby="title">
+        <p class="eyebrow">GROUP WORKSHOP · 15 MINUTES</p>
+        <h1 id="title">Хороший код.<br /><span>Проверенный запуск.</span></h1>
+        <p class="lead">
+          Небольшой project, который показывает весь путь: от проверки кода до
+          работающего приложения.
+        </p>
+        <div class="actions">
+          <button id="health-check" type="button">
+            Проверить приложение <span aria-hidden="true">↗</span></button
+          ><span class="hint">Реальный запрос к <code>/health</code></span>
+        </div>
+        <p id="health-result" role="status" aria-live="polite">
+          Нажмите кнопку, чтобы проверить этот сервер.
+        </p>
+        <noscript
+          >Для кнопки проверки нужен JavaScript. API доступен по адресу
+          <a href="/health">/health</a>.</noscript
+        >
+      </section>
+      <section class="pipeline" aria-labelledby="pipeline-title">
+        <div class="section-heading">
+          <h2 id="pipeline-title">Что проверяет pipeline</h2>
+          <span>01 → 05</span>
+        </div>
+        <ol>
+          <li>
+            <span class="number">01</span>
+            <div>
+              <h3>Lint check</h3>
+              <p>ESLint проверяет JavaScript, Prettier — форматирование.</p>
+              <code>npm run lint</code>
+            </div>
+            <span class="kind">КОД</span>
+          </li>
+          <li>
+            <span class="number">02</span>
+            <div>
+              <h3>Tests</h3>
+              <p>API, страницы, ошибки и HTTP-методы.</p>
+              <code>npm test</code>
+            </div>
+            <span class="kind">ЛОГИКА</span>
+          </li>
+          <li>
+            <span class="number">03</span>
+            <div>
+              <h3>Build project</h3>
+              <p>Создаёт самостоятельную сборку приложения в dist/.</p>
+              <code>npm run build</code>
+            </div>
+            <span class="kind">СБОРКА</span>
+          </li>
+          <li>
+            <span class="number">04</span>
+            <div>
+              <h3>Check README</h3>
+              <p>Проверяет, что README содержит слово project.</p>
+              <code>grep "project" README.md</code>
+            </div>
+            <span class="kind">ДОКУМЕНТАЦИЯ</span>
+          </li>
+          <li>
+            <span class="number">05</span>
+            <div>
+              <h3>Smoke check</h3>
+              <p>Запускает готовую сборку и делает HTTP-запросы.</p>
+              <code>npm run smoke</code>
+            </div>
+            <span class="kind">ЗАПУСК</span>
+          </li>
+        </ol>
+      </section>
+      <aside>
+        <div class="shield" aria-hidden="true">↻</div>
+        <div>
+          <h2>Dependabot</h2>
+          <p>
+            Автоматические предложения обновлений npm и GitHub Actions.
+            Результаты CI и состояние Dependabot смотрите в репозитории.
+          </p>
+        </div>
+        <a href="https://github.com/xlmtvv/Qoldau-workshop"
+          >Открыть репозиторий ↗</a
+        >
+      </aside>
+      <footer>
+        <span>Qoldau · Team assignment</span
+        ><span>Code → Test → Build → Run</span>
+      </footer>
+    </main>
+  </body>
+</html>
