@@ -8,6 +8,10 @@ A small runnable project for the “Improve your pipeline” team workshop.
 
 Локальные проверки, CI и первые проверки Dependabot прошли 28 октября 2026. Результаты и ссылки: [отчёт проверки](docs/verification.md).
 
+## English summary
+
+This is a small Node.js 24 project for practising a CI pipeline. To run it, use `npm ci`, `npm run build` and `npm start`, then open <http://127.0.0.1:3000> and press «Проверить приложение» (Check the app): the page should show `HTTP 200`. To run the linter, tests, build, README check and smoke check in one go, use `npm run check`.
+
 ## Запуск
 
 Установите Node.js 24 (версия указана в `.nvmrc`). В терминале из папки проекта:
